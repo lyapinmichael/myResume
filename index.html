@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Михаил Ляпин</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+   <header>
+        <div class="header-container">
+            <div class="header-text">
+                <h1>Михаил Ляпин</h1>
+                <h2>iOS Разработчик</h2>
+            </div>
+            <div class="header-memoji">
+                <img src="arie-memoji.png">
+            </div>
+            <div class="bubble-container">
+                <div class="bubble">
+                    <a href="https://github.com/lyapinmichael", target="_blank">Github</a>
+                </div>
+                <div class="bubble">
+                    <a href="https://t.me/mickeylyapin", target="_blank">Telegram<a>
+                </div>
+                <div class="bubble">
+                    <a href="mailto:lyapin.dev@gmail.com", target="_blank">Mail</a>
+                </div>
+            </div>
+        </div>
+   </header> 
+   <div class="main-container">
+    <div class="primary-content">
+        <section>
+            <h3>Обо мне</h3>
+            <p>
+                Пользуюсь эĸосистемой устройств Apple с эры iPhone 4, понимаю Human Interface Guidelines на подсознательном уровне. Поддерживаю читаемый, структурированный
+                код-стайл. 
+                Считаю ценностью продуĸта его пользу и юзабилити для множества пользователей ĸаждый день, а ценностью ĸода под ĸапотом продуĸта – оптимальную простоту, читаемость и сĸорость работы. 
+                Люблю работать в команде, умею улаживать споры, а еще люблю организовывать и оптимизировать рабочие процессы.  
+                В свободное время размышляю о граждансĸо-правовом статусе ĸриптовалют, NFT и прочих цифровых аĸтивов. 
+            </p>
+            <p> Свободно владею английским языком (C1), изучал китайский (HSK2+), имею базовые знания немецкого (A2).</p>
+        </section>
+        <section>
+            <h3>Опыт</h3>
+            <h4>Molnia Mobile</h4>
+            <h5>2023 - ...</h5>
+            <p>
+                Проект - приложение детского футбольного клуба, целью которого является повышение интереса маленьких футболистов к спорту 
+                с помощью карточный игры. За выполнение задач, поставленных тренером, игроки получают ценные игровые карточки.
+            </p>
+            <p>
+                Приложение состоит из трех глобальных составляющих - клиентского приложения игрока, тренера и администратора футбольного клуба. В 
+                зависимости от статуса пользователя, осуществившего вход, приложение предлагает различный интерфейс и функционал.
+                Интерфейс приложения реализован на UIKit, с созданием многих сложных кастомных элементов, включая адаптивные ячейки 
+                таблиц и коллекций, кастомные вспылвающие окна и др. За бэкенд отвечает Firebase: для аутентификации и авторизации
+                пользователей используется Auth, в качестве главной базы данных выступает Firestore, а файлы (пользовательские аватарки, картинки игровых 
+                карточек) хранятся в Cloud Storage.
+            </p>
+            <p>
+                Среди моих непосредственных задач были: верстка экранов, разработка сервисов взаимодействия с бэкендом и базой данных, разработка
+                моделей данных для всего проекта.
+            </p>
+            <small>Код проекта может быть предоставлен по запросу для ознакомления.</small>
+            <small>Конакты менеджера проекта и тим-лида команды iOS разработки могут быть предоставлены по запросу.</small>
+
+            <h3>Мои проекты</h3>
+            <h4>Прогноз погоды</h4>
+            <a href="https://github.com/lyapinmichael/WeatherWise">Репозиторий проекта на Github</a>
+            <p>
+                Это курсовой проект курса Нетологии. 
+                Приложение для просмотра прогноза погоды. Интерфейс основан на Storyboard. Приложение построено с использованием паттерна MVVM. В данном приложение 
+                большую роль играет сервис работы с API, который использует фреймворк Alamofire. Приложение отправляет HTTP запросы к открытому API, полученные json данные декодирует в codable-модели. 
+                Локальное хранение данных организовано при помощи фреймворка CoreData. Также для реализации логики онбординга нового пользователя используется 
+                фреймворк UserDefaults. Кроме того, в данном приложении использованы фреймфорки для работы с геолокацией: CoreLocation, включая CLGeocoder. Приложение 
+                определяет местонахождения пользователя и предоставляет прогноз для этой местности. Также при поиске и добавлении места вручную используется прямой и 
+                обратный геокодинг при помощи CLGeocoder для перевода введенного названия места в координаты локации, необходимые для отправки запроса к API.
+            </p>
+            <p>
+                Для работы этого приложения использовался свободный API <a href="https://open-meteo.com">OpenMeteo</a>.
+            </p>
+
+            <h4>Симулятор социальной сети</h4>
+            <a href="https://github.com/lyapinmichael/ios-homeworks/tree/develop-diploma">Репозиторий проекта на Github (WIP)</a>
+            <p>
+                Это дипломный проект курса Нетологии.
+                Приложение представлет собой клиент социальной сети. Полностью построен на архитектуре MVVM+C. Большое количество модулей сделало обоснованным
+                внедрение координаторов для отимизации навигации и сохранении логики в коде. 
+                Интерфейс приложения реализован на UIKit, с созданием кастомных элементов, включая кнопки, текстовые поля и др. Бэкенд на сервисах Firebase:
+                для аутентификации и авторизации пользователей используется Auth, Firestore как основная база данных и CloudStorage для хранения пользовательских
+                файлов. Для локального хранения данных использовался фреймворк CoreData. 
+            </p>
+            <p>
+                В различных ветках в репозитории этого проекта можно посмотреть последовательный прогресс в обучении. 
+            </p>
+
+            <h4>Трекер цен криптовалют</h4>
+            <a href="https://github.com/lyapinmichael/CoinWatch">Репозиторий проекта на Github</a>
+            <p>
+                Интерфейс для данного проекта написан при помощи SwiftUI, также использованы характерные для SwiftUI методы для передачи данных между экранами. 
+                Кроме того, в проекте использованы современные AsyncImage, SiwftCharts и др.  
+            </p>
+
+        </section>
+        <section>
+            <h3>Образование</h3>
+            <h4>ООО «Нетология» – «Профессия iOS разработчиĸ с нуля»</h4>
+            <h6>2022-2023</h6>
+            <p>
+                Полный курс обучению разработки для iOS. Сертификаты можно посмотреть по <a href="https://drive.google.com/drive/folders/14YP7Tc18awlT68srGnUOSEbHGpOxJowY?usp=share_link">ссылке.</a>
+            </p>
+            <h4>Санкт-Петербургский государственный университет, юридический факультет</h4>
+            <h6>2016-2020 бакалавриат с углубленым изучением права КНР и китайского языка</h6>
+            <h6>2016-2022 магистратура - Налоговое право</h6>
+        </section>
+    </div>
+    <hr/>
+    <div class="right-sidebar">
+        <section>
+            <h3>Профессиональные навыки</h3>
+            <h4>iOS</h4>
+            <ul>
+                <li>Swift 5.x +</li>
+                <li>XCode 13.x +</li>
+                <li class="embedded-ul-title">Interface:
+                    <ul>
+                        <li>UIKit + AutoLayout</li>
+                        <li>SwiftUI</li>
+                        <li>CoreAnimation</li>
+                    </ul>
+                </li>
+                <li class="embedded-ul-title">Data persistence:
+                    <ul>
+                        <li>CoreData</li>
+                        <li>UserDefaults</li>
+                        <li>Keychain</li>
+                    </ul>
+                </li>
+                <li class="embedded-ul-title">Multithreading:
+                    <ul>
+                        <li>GrandCentralDispatch</li>
+                        <li>Operations</li>
+                    </ul>
+                </li>
+                <li>LocalAuthentication</li>
+                <li>NSNotifications</li>
+                <li>AVFoundation</li>
+                <li>CoreLocation</li>
+                <li>Geocoding</li>
+                <li>XCTests</li>
+                <li class="embedded-ul-title">Управление зависимостями:
+                    <ul>
+                        <li>SwiftPackageManager</li>
+                        <li>CocoaPods</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4>Third-party</h4>
+            <ul>
+                <li class="embedded-ul-title">Firebase:
+                    <ul>
+                        <li>Auth</li>
+                        <li>Cloud Firestore</li>
+                        <li>CloudStorage</li>
+                    </ul>
+                </li>
+                <li>Alamofire</li>
+                <li>Realm</li>
+            </ul>
+            <h4>Паттерны</h4>
+            <ul>
+                <li class="embedded-ul-title">Архитектурные:
+                    <ul>
+                        <li>MVC (AppleMVC)</li>
+                        <li>MVVM</li>
+                        <li>Coordinator</li>
+                    </ul>
+                </li>
+                <li class="embedded-ul-title">Структурные:
+                    <ul>
+                        <li>Delegate</li>
+                        <li>Callback</li>
+                        <li>Singleton</li>
+                        <li>Factory</li>
+                        <li>Observer</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4>Контроль версий</h4>
+            <ul>
+                <li>Git/Github</li>
+            </ul>
+            <h4>И еще</h4>
+            <ul>
+                <li class="embedded-ul-title">Python 3.7+
+                    <ul>
+                        <li>Flask/Gunicorn</li>
+                        <li>SQLAlchemy</li>
+                    </ul>
+                </li>
+                <li>Nginx</li>
+                <li>Linux OS (Ubuntu, Alpine) administration</li>
+                <li>Docker/Docker-Compose</li>
+                <li>SQLite</li>
+                <li>MySQL</li>
+            </ul>
+       </section> 
+    </div>
+   </div>
+</body>
+</html>
